@@ -1,0 +1,21 @@
+/** Replace any entry with a licensed image URL; no component changes needed. */
+export const profileImages: Record<string, string | undefined> = {
+  "penelope-cruz": undefined,
+  "javier-bardem": undefined,
+  "salma-hayek": undefined,
+  "gael-garcia-bernal": undefined,
+  "pedro-pascal": undefined,
+  cantinflas: undefined,
+  "guillermo-del-toro": undefined,
+  "pedro-almodovar": undefined,
+  rosalia: undefined,
+  shakira: undefined,
+  "bad-bunny": undefined,
+  "karol-g": undefined,
+  "ursula-corbero": undefined,
+  "sofia-vergara": undefined,
+  "frida-kahlo": undefined,
+  flamenco: undefined,
+  "dia-de-los-muertos": undefined,
+  "carnaval-de-barranquilla": undefined,
+};
