@@ -357,7 +357,3 @@
 .quiz-step {
   animation: rise 280ms var(--ease-editorial) both;
 }
-
-html {
-  scroll-behavior: smooth;
-}
