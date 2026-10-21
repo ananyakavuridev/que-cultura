@@ -11,13 +11,13 @@ export function PersonalityQuiz() {
   const { t, l } = useI18n();
   const [stage, setStage] = useState<"intro" | "questions" | "result">("intro");
   const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState<(number | null)[]>(Array(10).fill(null));
+  const [answers, setAnswers] = useState<(number | null)[]>(Array(quizQuestions.length).fill(null));
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     if (stage !== "intro") heading.current?.focus();
   }, [stage, index]);
   const start = () => {
-    setAnswers(Array(10).fill(null));
+    setAnswers(Array(quizQuestions.length).fill(null));
     setIndex(0);
     setStage("questions");
   };
@@ -45,11 +45,11 @@ export function PersonalityQuiz() {
           <div className="mt-10">
             <progress
               className="quiz-progress w-full"
-              aria-label={t.assessment.progress(index + 1, 10)}
+              aria-label={t.assessment.progress(index + 1, quizQuestions.length)}
               value={answers.filter((a) => a !== null).length}
-              max={10}
+              max={quizQuestions.length}
             />
-            <p className="eyebrow mt-4 text-ink-500">{t.assessment.progress(index + 1, 10)}</p>
+            <p className="eyebrow mt-4 text-ink-500">{t.assessment.progress(index + 1, quizQuestions.length)}</p>
             <div key={question.id} className="quiz-step">
               <h2 ref={heading} tabIndex={-1} className="h2-editorial mt-5 outline-none">
                 {l(question.text)}
@@ -88,10 +88,14 @@ export function PersonalityQuiz() {
               </Button>
               <Button
                 disabled={answers[index] === null}
-                onClick={() => (index === 9 ? setStage("result") : setIndex((i) => i + 1))}
+                onClick={() =>
+                  index === quizQuestions.length - 1
+                    ? setStage("result")
+                    : setIndex((i) => i + 1)
+                }
                 className="h-auto min-h-12 whitespace-normal"
               >
-                {index === 9 ? t.assessment.finish : t.assessment.next}
+                {index === quizQuestions.length - 1 ? t.assessment.finish : t.assessment.next}
                 <ArrowRight aria-hidden />
               </Button>
             </div>
