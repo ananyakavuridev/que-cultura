@@ -8,6 +8,9 @@ export const profileImages: Record<string, string | undefined> = {
   cantinflas: "/images/profiles/catin-flas.jpg",
   "guillermo-del-toro": "/images/profiles/toro.webp",
   "pedro-almodovar": "/images/profiles/pedro.jpg",
+  "pedro-infante": "/images/profiles/pedro-infante.webp",
+  "maria-felix": "/images/profiles/maria-felix.avif",
+
   rosalia: "/images/profiles/rosalia.jpg",
   shakira: "/images/profiles/shakira.jpg",
   "bad-bunny": "/images/profiles/bad-bunny.webp",
@@ -18,4 +21,9 @@ export const profileImages: Record<string, string | undefined> = {
   flamenco: "/images/profiles/flamenco.jpg",
   "dia-de-los-muertos": "/images/profiles/muertos.jpg",
   "carnaval-de-barranquilla": "/images/profiles/carnival.webp",
+  "jennifer-lopez": "/images/profiles/jennifer-lopez.avif",
+  "selena-gomez": "/images/profiles/selena-gomez.jpg",
+  "zoe-saldana": "/images/profiles/zoe-saldana.jpg",
+  "stephanie-beatriz": "/images/profiles/stephanie-beatriz.jpg",
+  "lionel-messi": "/images/profiles/lionel-messi.jpg",
 };

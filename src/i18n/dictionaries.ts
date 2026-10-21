@@ -180,7 +180,7 @@ const en: Dict = {
   quiz: {
     overline: "The questionnaire",
     title: "Who is your celebrity twin?",
-    body: "Ten questions, no wrong answers. Find out which Hispanic cinema figure shares your affinities.",
+    body: "Twelve questions, no wrong answers. Find out which Hispanic cinema figure shares your affinities.",
     cta: "Start the quiz",
     script: "go on!",
   },
@@ -220,7 +220,7 @@ const en: Dict = {
   },
   assessment: {
     instructions:
-      "Answer 10 questions and discover which Hispanic celebrity is like you. Choose one answer per question.",
+      "Answer 12 questions and discover which Hispanic celebrity is like you. Choose one answer per question.",
     note: "A playful cultural affinity, not a diagnosis or a claim about anyone’s private personality.",
     start: "Start",
     next: "Next question",

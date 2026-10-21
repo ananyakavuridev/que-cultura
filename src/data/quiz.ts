@@ -294,6 +294,68 @@ export const quizResults: QuizResult[] = [
       en: "Karol G is a confident and sweet woman. She worked for many years to achieve her dream. Now she performs concerts in many countries.",
     },
   },
+
+  {
+    id: "pedro-infante",
+    name: "Pedro Infante",
+    country: { es: "México", en: "Mexico" },
+    keywords: [
+      { es: "carismático", en: "charismatic" },
+      { es: "cálido", en: "warm" },
+      { es: "expresivo", en: "expressive" },
+      { es: "tradicional", en: "traditional" },
+    ],
+    description: {
+      es: "Eres una persona cálida y expresiva que valora la familia, la música y las tradiciones. Como Pedro Infante, conectas con los demás a través de tus emociones y tu carisma.",
+      en: "You are a warm and expressive person who values family, music and tradition. Like Pedro Infante, you connect with others through your emotions and charisma.",
+    },
+  },
+  {
+    id: "maria-felix",
+    name: "María Félix",
+    country: { es: "México", en: "Mexico" },
+    keywords: [
+      { es: "independiente", en: "independent" },
+      { es: "elegante", en: "elegant" },
+      { es: "decidida", en: "determined" },
+      { es: "segura", en: "confident" },
+    ],
+    description: {
+      es: "Eres una persona segura, independiente y decidida. Como María Félix, tienes una personalidad fuerte, sabes lo que quieres y no tienes miedo de destacar.",
+      en: "You are a confident, independent and determined person. Like María Félix, you have a strong personality, know what you want and aren't afraid to stand out.",
+    },
+  },
+
+  {
+    id: "rosalia",
+    name: "Rosalía",
+    country: { es: "España", en: "Spain" },
+    keywords: [
+      { es: "creativa", en: "creative" },
+      { es: "atrevida", en: "bold" },
+      { es: "experimental", en: "experimental" },
+      { es: "original", en: "original" },
+    ],
+    description: {
+      es: "Eres una persona creativa y atrevida que disfruta probar cosas nuevas. Como Rosalía, mezclas estilos, sigues tu propio camino y no tienes miedo de expresarte.",
+      en: "You are a creative and bold person who enjoys trying new things. Like Rosalía, you mix styles, follow your own path, and aren't afraid to express yourself.",
+    },
+  },
+  {
+    id: "frida-kahlo",
+    name: "Frida Kahlo",
+    country: { es: "México", en: "Mexico" },
+    keywords: [
+      { es: "artística", en: "artistic" },
+      { es: "independiente", en: "independent" },
+      { es: "expresiva", en: "expressive" },
+      { es: "resiliente", en: "resilient" },
+    ],
+    description: {
+      es: "Eres una persona artística, independiente y expresiva. Como Frida Kahlo, conviertes tus experiencias y emociones en algo propio y tienes el valor de mostrar quién eres.",
+      en: "You are an artistic, independent, and expressive person. Like Frida Kahlo, you turn your experiences and emotions into something personal and have the courage to show who you are.",
+    },
+  },
 ];
 
 const option = (
@@ -326,7 +388,7 @@ export const quizQuestions: QuizQuestion[] = [
     options: [
       option("Pintar o leer en casa.", "Paint or read at home.", 1, 6),
       option("Viajar a una ciudad nueva.", "Travel to a new city.", 3, 13),
-      option("Ir a una fiesta con ropa de colores.", "Go to a party wearing colorful clothes.", 7, 11),
+      option("Ir a una fiesta con ropa de colores.", "Go to a party wearing colorful clothes.", 7, 20),
       option("Bailar con música muy alta.", "Dance to very loud music.", 10, 8),
       option("Hacer algo creativo con amigos.", "Do something creative with friends.", 12, 17),
       option("Ver una serie con mi mejor amigo/a.", "Watch a show with my best friend.", 15, 16),
@@ -336,9 +398,9 @@ export const quizQuestions: QuizQuestion[] = [
     id: "q3",
     text: { es: "¿Qué comida te gusta?", en: "What food do you like?" },
     options: [
-      option("Una comida caliente en familia.", "A warm meal with family.", 4, 15),
+      option("Una comida caliente en familia.", "A warm meal with family.", 4, 18),
       option("Una comida rara, pero interesante.", "Food that is unusual but interesting.", 6, 1),
-      option("Una comida elegante en un restaurante.", "An elegant meal at a restaurant.", 9, 2),
+      option("Una comida elegante en un restaurante.", "An elegant meal at a restaurant.", 9, 19),
       option("Arroz con pollo y mucha música.", "Rice with chicken and lots of music.", 11, 10),
       option("Comida de muchos países.", "Food from many countries.", 13, 11),
       option("Dulces, chocolate y helado.", "Sweets, chocolate, and ice cream.", 17, 12),
@@ -362,7 +424,7 @@ export const quizQuestions: QuizQuestion[] = [
     options: [
       option("Pienso mucho y doy un buen consejo.", "I think carefully and give good advice.", 1, 0),
       option("Hago un plan y trabajamos juntos.", "I make a plan and we work together.", 2, 9),
-      option("Lo/la escucho con paciencia.", "I listen patiently.", 4, 16),
+      option("Lo/la escucho con paciencia.", "I listen patiently.", 4, 18),
       option("Le doy un abrazo y le hablo con cariño.", "I give them a hug and speak kindly.", 12, 17),
       option("Actúo rápido y lo/la ayudo ahora.", "I act quickly and help them right away.", 14, 2),
       option("Estoy con él/ella y no hablo mucho.", "I stay with them without saying much.", 16, 15),
@@ -376,7 +438,7 @@ export const quizQuestions: QuizQuestion[] = [
       option("Una película de fantasía o de miedo.", "A fantasy or horror movie.", 6, 1),
       option("Un drama con mucha emoción.", "A drama full of emotion.", 7, 0),
       option("Una película de baile y música.", "A movie about dance and music.", 9, 10),
-      option("Una película con mucho estilo.", "A movie with lots of style.", 11, 14),
+      option("Una película con mucho estilo.", "A movie with lots of style.", 11, 19),
       option("Una película del espacio.", "A movie about space.", 13, 3),
     ],
   },
@@ -388,7 +450,7 @@ export const quizQuestions: QuizQuestion[] = [
       option("Cuidar a la gente que quiero.", "To take care of the people I love.", 4, 0),
       option("Tener mi propia empresa.", "To have my own company.", 9, 5),
       option("Hacer mi propio estilo, diferente.", "To create my own, different style.", 11, 7),
-      option("Vivir sin miedo.", "To live without fear.", 14, 8),
+      option("Vivir sin miedo.", "To live without fear.", 14, 19),
       option("Trabajar mucho y ser feliz.", "To work hard and be happy.", 17, 12),
     ],
   },
@@ -411,7 +473,7 @@ export const quizQuestions: QuizQuestion[] = [
       option("Rojo, un color de líder.", "Red, a leader's color.", 2, 9),
       option("Verde, como la naturaleza.", "Green, like nature.", 3, 13),
       option("Negro o morado, colores misteriosos.", "Black or purple, mysterious colors.", 6, 14),
-      option("Colores fuertes y brillantes.", "Strong and bright colors.", 7, 11),
+      option("Colores fuertes y brillantes.", "Strong and bright colors.", 7, 21),
       option("Amarillo, un color con energía.", "Yellow, an energetic color.", 10, 8),
       option("Gris o azul oscuro.", "Gray or dark blue.", 15, 6),
     ],
@@ -423,7 +485,7 @@ export const quizQuestions: QuizQuestion[] = [
       option("Música romántica y emocional.", "Romantic and emotional music.", 0, 7),
       option("Música de muchos países.", "Music from many countries.", 3, 13),
       option("Música para una fiesta.", "Music for a party.", 8, 14),
-      option("Reguetón con un estilo único.", "Reggaeton with a unique style.", 11, 7),
+      option("Reguetón con un estilo único.", "Reggaeton with a unique style.", 11, 20),
       option("Música suave y bonita.", "Soft and beautiful music.", 12, 17),
       option("Música tranquila para pensar.", "Calm music for thinking.", 16, 1),
     ],
@@ -447,7 +509,7 @@ export const quizQuestions: QuizQuestion[] = [
       option("Crear mi propio negocio.", "To create my own business.", 2, 9),
       option("Hacer reír y ayudar a la gente.", "To make people laugh and help them.", 5, 4),
       option("Crear mundos de fantasía.", "To create fantasy worlds.", 6, 1),
-      option("Hacer arte con colores y emociones.", "To make art with colors and emotions.", 7, 0),
+      option("Hacer arte con colores y emociones.", "To make art with colors and emotions.", 7, 21),
       option("Explorar el espacio y el mundo.", "To explore space and the world.", 13, 3),
       option("Dar conciertos y cumplir mis sueños.", "To perform concerts and fulfill my dreams.", 17, 12),
     ],

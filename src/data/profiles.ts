@@ -550,7 +550,87 @@ export const cinemaProfiles: Profile[] = [
       en: "Supplied document: Celebrity Personality Profiles",
     },
     interpretive: true,
+    
     monogram: "PA",
     imageKey: "pedro-almodovar",
   },
+  {
+    id: "pedro-infante",
+    isSample: false,
+    needsVerification: true,
+    name: { es: "Pedro Infante", en: "Pedro Infante" },
+    discipline: { es: "Actor y cantante", en: "Actor and singer" },
+    hook: {
+      es: "carismático, cálido, expresivo.",
+      en: "charismatic, warm, expressive.",
+    },
+    country: { es: "México", en: "Mexico" },
+    activeYears: "1939–1957",
+    bio: {
+      es: "Pedro Infante fue un actor y cantante mexicano y una de las figuras más queridas de la Época de Oro del cine mexicano. Se hizo famoso por sus personajes cercanos al público y por combinar la actuación con la música ranchera.",
+      en: "Pedro Infante was a Mexican actor and singer and one of the most beloved figures of the Golden Age of Mexican cinema. He became famous for relatable characters and for combining acting with ranchera music.",
+    },
+    significance: {
+      es: "Sus películas y canciones siguen formando parte de la memoria cultural mexicana. Su trabajo conecta el cine clásico, la música ranchera y las historias de la vida cotidiana.",
+      en: "His films and songs remain part of Mexican cultural memory. His work connects classic cinema, ranchera music and stories of everyday life.",
+    },
+    works: [
+      { es: "Nosotros los pobres", en: "Nosotros los pobres" },
+      { es: "Tizoc", en: "Tizoc" },
+      { es: "Los tres García", en: "Los tres García" },
+    ],
+    keywords: [
+      { es: "carismático", en: "charismatic" },
+      { es: "cálido", en: "warm" },
+      { es: "expresivo", en: "expressive" },
+    ],
+    source: {
+      es: "Perfil editorial; verificar con fuentes fiables.",
+      en: "Editorial profile; verify against reliable sources.",
+    },
+    interpretive: true,
+    category: "cinema",
+    imageKey: "pedro-infante",
+    monogram: "PI",
+  },
+  {
+    id: "maria-felix",
+    isSample: false,
+    needsVerification: true,
+    name: { es: "María Félix", en: "María Félix" },
+    discipline: { es: "Actriz", en: "Actress" },
+    hook: {
+      es: "independiente, elegante, decidida.",
+      en: "independent, elegant, determined.",
+    },
+    country: { es: "México", en: "Mexico" },
+    activeYears: "1942–1970",
+    bio: {
+      es: "María Félix fue una actriz mexicana y una de las grandes estrellas de la Época de Oro del cine mexicano. Conocida como La Doña, destacó por interpretar personajes fuertes, independientes y decididos.",
+      en: "María Félix was a Mexican actress and one of the great stars of the Golden Age of Mexican cinema. Known as La Doña, she stood out for portraying strong, independent and determined characters.",
+    },
+    significance: {
+      es: "Su presencia en pantalla, sus papeles de mujeres con carácter y su estilo personal la convirtieron en un icono del cine mexicano. Su legado sigue influyendo en la cultura popular y en la representación de mujeres poderosas.",
+      en: "Her screen presence, roles portraying strong-willed women and personal style made her an icon of Mexican cinema. Her legacy continues to influence popular culture and portrayals of powerful women.",
+    },
+    works: [
+      { es: "Doña Bárbara", en: "Doña Bárbara" },
+      { es: "Enamorada", en: "Enamorada" },
+      { es: "Río Escondido", en: "Río Escondido" },
+    ],
+    keywords: [
+      { es: "independiente", en: "independent" },
+      { es: "elegante", en: "elegant" },
+      { es: "decidida", en: "determined" },
+    ],
+    source: {
+      es: "Perfil editorial; verificar con fuentes fiables.",
+      en: "Editorial profile; verify against reliable sources.",
+    },
+    interpretive: true,
+    category: "cinema",
+    imageKey: "maria-felix",
+    monogram: "MF",
+  },
 ];
+
